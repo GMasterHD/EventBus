@@ -42,7 +42,7 @@ public:
 
 int main() {
 	obj.on("test", [](void* data) {
-		EventData* e = (EventData*) data;
+		EventClass::EventData* e = (EventClass::EventData*) data;
 		std::cout << e->name << std::endl;
 	})
 }
