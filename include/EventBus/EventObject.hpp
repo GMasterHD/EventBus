@@ -18,14 +18,6 @@ namespace eb {
 		 * @param func The event function
 		 */
 		void on(const std::string& event, EventFunction func);
-		
-		/**
-		 * @brief Listens on a event once
-		 *
-		 * @param event The event name
-		 * @param func The function that will be executed
-		 */
-		void once(const std::string& event, EventFunction func);
 	
 	protected:
 		/**
@@ -38,6 +30,5 @@ namespace eb {
 
 	private:
 		std::unordered_map<std::string, std::vector<EventFunction>> onFunctions;
-		std::unordered_map<std::string, std::vector<EventFunction>> onceFunctions;
 	};
 }
