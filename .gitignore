@@ -1,0 +1,9 @@
+debug.lua
+.vscode/
+bin/
+bin-int/
+Test/
+*.sln
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filter
